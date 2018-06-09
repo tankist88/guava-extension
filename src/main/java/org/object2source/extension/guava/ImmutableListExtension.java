@@ -18,12 +18,17 @@ public class ImmutableListExtension extends AbstractCollectionExtension {
 
     @Override
     public void fillMethodBody(StringBuilder bb, Set<ProviderInfo> providers, int objectDepth, Object obj) throws Exception {
-        createAbstractCollectionInstance(obj, bb, providers, ArrayList.class, objectDepth);
         bb.append(getTabSymb())
-          .append(getTabSymb())
-          .append("return com.google.common.collect.ImmutableList.copyOf(")
-          .append(getInstName(ArrayList.class))
-          .append(");\n");
+          .append(getTabSymb());
+
+        if(objectDepth > 1) {
+            createAbstractCollectionInstance(obj, bb, providers, ArrayList.class, objectDepth);
+            bb.append("return com.google.common.collect.ImmutableList.copyOf(")
+              .append(getInstName(ArrayList.class))
+              .append(");\n");
+        } else {
+            bb.append("return com.google.common.collect.ImmutableList.copyOf(new java.util.ArrayList());\n");
+        }
     }
 
     @Override
