@@ -1,14 +1,14 @@
-package org.object2source.extension.guava;
+package com.github.tankist88.extension.guava;
 
-
-import org.object2source.dto.ProviderInfo;
-import org.object2source.extension.collections.AbstractCollectionExtension;
+import com.github.tankist88.object2source.dto.ProviderInfo;
+import com.github.tankist88.object2source.extension.collections.AbstractCollectionExtension;
 
 import java.util.ArrayList;
 import java.util.Set;
 
-import static org.object2source.util.GenerationUtil.getClassHierarchyStr;
-import static org.object2source.util.GenerationUtil.getInstName;
+import static com.github.tankist88.object2source.util.GenerationUtil.getClassHierarchyStr;
+import static com.github.tankist88.object2source.util.GenerationUtil.getInstName;
+
 
 public class ImmutableListExtension extends AbstractCollectionExtension {
     @Override

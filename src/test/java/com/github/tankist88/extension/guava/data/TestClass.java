@@ -1,4 +1,4 @@
-package org.object2source.extension.guava.data;
+package com.github.tankist88.extension.guava.data;
 
 import java.util.Objects;
 

@@ -1,9 +1,9 @@
-package org.object2source.extension.guava;
+package com.github.tankist88.extension.guava;
 
+import com.github.tankist88.extension.guava.data.TestClass;
+import com.github.tankist88.object2source.SourceGenerator;
+import com.github.tankist88.object2source.dto.ProviderResult;
 import com.google.common.collect.ImmutableList;
-import org.object2source.SourceGenerator;
-import org.object2source.dto.ProviderResult;
-import org.object2source.extension.guava.data.TestClass;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
