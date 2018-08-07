@@ -2,11 +2,8 @@
 
 [![Build Status](https://travis-ci.org/tankist88/guava-extension.svg?branch=master)](https://travis-ci.org/tankist88/guava-extension)
 [![Codecov](https://img.shields.io/codecov/c/github/tankist88/guava-extension.svg)](https://codecov.io/gh/tankist88/guava-extension)
-
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b579b8638a5d41f7a2bcc9b470b77cb9)](https://www.codacy.com/project/tankist88/guava-extension/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tankist88/guava-extension&amp;utm_campaign=Badge_Grade_Dashboard)
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.tankist88/guava-extension.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.tankist88%22%20a%3A%22guava-extension%22)
-![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/https/oss.sonatype.org/com.github.tankist88/guava-extension.svg)
-![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/https/oss.sonatype.org/com.github.tankist88/guava-extension.svg)
 
 Object2source extension to generate guava objects
 
