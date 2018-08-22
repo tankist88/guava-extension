@@ -17,10 +17,14 @@ public class ImmutableListExtension extends AbstractCollectionExtension {
     }
 
     @Override
-    public void fillMethodBody(StringBuilder bb, Set<ProviderInfo> providers, int objectDepth, Object obj) throws Exception {
-        bb.append(getTabSymb())
-          .append(getTabSymb());
+    public boolean isFillingSupported() {
+        return false;
+    }
 
+    @Override
+    public String getMethodBody(Set<ProviderInfo> providers, int objectDepth, Object obj, boolean fillObj) throws Exception {
+        StringBuilder bb = new StringBuilder();
+        bb.append(getTabSymb()).append(getTabSymb());
         if(objectDepth > 1) {
             createAbstractCollectionInstance(obj, bb, providers, ArrayList.class, objectDepth);
             bb.append("return com.google.common.collect.ImmutableList.copyOf(")
@@ -29,6 +33,7 @@ public class ImmutableListExtension extends AbstractCollectionExtension {
         } else {
             bb.append("return com.google.common.collect.ImmutableList.copyOf(new java.util.ArrayList());\n");
         }
+        return bb.toString();
     }
 
     @Override
