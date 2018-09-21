@@ -35,7 +35,7 @@ public class ImmutableListExtensionTest {
     }
 
     private List<TestClass> createTestList() {
-        List<TestClass> intList = new ArrayList<>();
+        List<TestClass> intList = new ArrayList<TestClass>();
         for (int i = 0; i < 10; i++) {
             intList.add(new TestClass(i));
         }

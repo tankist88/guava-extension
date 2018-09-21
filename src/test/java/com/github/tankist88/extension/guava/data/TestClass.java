@@ -1,7 +1,5 @@
 package com.github.tankist88.extension.guava.data;
 
-import java.util.Objects;
-
 public class TestClass {
     private int id;
 
@@ -31,7 +29,6 @@ public class TestClass {
 
     @Override
     public int hashCode() {
-
-        return Objects.hash(id);
+        return id;
     }
 }
